@@ -3,17 +3,6 @@ import random
 
 finnhub_client = finnhub.Client(api_key="c1ev9t748v6vvsb4450g")
 
-def add_digits(num):
-        return (num - 1) % 9 + 1 if num > 0 else 0
-
-def reduce_string(string):
-    strPrice = ""
-    for char in string:
-        if char.isdigit():
-            strPrice += char
-    
-    return int(strPrice)
- 
 currency_list = ['AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 'AWG', 'AZN', 'BAM', 
 'BBD', 'BDT', 'BGN', 'BHD', 'BIF', 'BMD', 'BND', 'BOB', 'BRL', 'BSD', 'BTC', 'BTN', 'BWP', 'BYN', 
 'BYR', 'BZD', 'CAD', 'CDF', 'CHF', 'CLF', 'CLP', 'CNY', 'COP', 'CRC', 'CUC', 'CUP', 'CVE', 'CZK', 
@@ -26,6 +15,17 @@ currency_list = ['AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 'AWG', 
 'SOS', 'SRD', 'STD', 'SVC', 'SYP', 'SZL', 'THB', 'TJS', 'TMT', 'TND', 'TOP', 'TRY', 'TTD', 'TWD', 
 'TZS', 'UAH', 'UGX', 'USD', 'UYU', 'UZS', 'VEF', 'VND', 'VUV', 'WST', 'XAF', 'XAG', 'XAU', 'XCD', 
 'XDR', 'XOF', 'XPF', 'YER', 'ZAR', 'ZMK', 'ZMW', 'ZWL']
+
+def add_digits(num):
+        return (num - 1) % 9 + 1 if num > 0 else 0
+
+def reduce_string(string):
+    strPrice = ""
+    for char in string:
+        if char.isdigit():
+            strPrice += char
+    
+    return int(strPrice)
 
 def get_random_digit():
     prandom_currency = currency_list[random.randrange(0, len(currency_list) - 1)]
