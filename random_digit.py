@@ -13,10 +13,6 @@ def reduce_string(string):
             strPrice += char
     
     return int(strPrice)
-
-def insert_zeros(i):
-    random_number = random.randrange(0, 10)
-    return 0 if random_number == 0 else i
  
 currency_list = ['AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 'AWG', 'AZN', 'BAM', 
 'BBD', 'BDT', 'BGN', 'BHD', 'BIF', 'BMD', 'BND', 'BOB', 'BRL', 'BSD', 'BTC', 'BTN', 'BWP', 'BYN', 
