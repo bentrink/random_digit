@@ -1,7 +1,7 @@
 import finnhub
 import random
 
-finnhub_client = finnhub.Client(api_key="c1ev9t748v6vvsb4450g")
+finnhub_client = finnhub.Client(api_key="notarealkey")
 
 currency_list = ['AED', 'AFN', 'ALL', 'AMD', 'ANG', 'AOA', 'ARS', 'AUD', 'AWG', 'AZN', 'BAM', 
 'BBD', 'BDT', 'BGN', 'BHD', 'BIF', 'BMD', 'BND', 'BOB', 'BRL', 'BSD', 'BTC', 'BTN', 'BWP', 'BYN', 
